@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
+
+    {% block style%} {% endblock %}
+
+</head>
+<body>
+
+{% include 'home/header.html' %}
+
+<div id="root">
+
+    {% block content%} {% endblock %}
+</div>
+
+{% include 'home/footer.html' %}
+
+<script src="{% static 'home/js/bootstrap.js' %}"></script>
+{% block script%} {% endblock %}
+</body>
+</html>

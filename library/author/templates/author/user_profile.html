@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Profile {% endblock %}
+{% block content %}
+<h1>{{ author.name }}</h1>
+<img src="{{ author.photo.url }}" alt="Author Image"/>
+
+<br><hr>
+<h3>Books</h3>
+{% for book in books %}
+
+    <h4>{{ book.title }}</h4>
+    <p>{{ book.description }}</p>
+    <a href="{% url 'book:delete_book' book.id %}"> Delete</a>
+    <br>
+    <hr>
+{% endfor %}
+
+{% endblock %}
+

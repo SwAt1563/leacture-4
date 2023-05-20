@@ -1,0 +1,29 @@
+{% extends 'home/base.html' %}
+
+{% block title%} Home {% endblock %}
+
+
+{% block content%}
+   <h1>Books</h1>
+ <h1>Book Search</h1>
+    <form method="GET">
+        <input type="text" name="search">
+        <input type="submit" value="Search">
+    </form>
+    <hr>
+
+    {% for book in books %}
+
+   <h2>{{ book.title }}</h2>
+<p>Likes {{ book.likes_count }}</p>
+{% if user.is_authenticated %}
+<a href="{% url 'book:like' book.id %}">Like</a>
+{% endif %}
+<p>{{ book.description }}</p>
+<hr><br>
+   {% endfor %}
+
+
+
+{% endblock %}
+
