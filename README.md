@@ -20,4 +20,4 @@ When undertaking a project for a client, it is crucial to recognize that they ma
 - Create a car details page for each car showing all its characteristics. The page's URL should use the car's unique slug.
 - Create a registration page for both customers and owners. During registration, users should select their role and specify their starting wallet amount.
 - Include a login page requiring a username and password.
-- Create a profile editing page for both customers and owners, allowing them to change their names. Only the profile owner can make changes.
+- Create a profile editing page for owners, allowing them to change their names. Only the profile owner can make changes.
