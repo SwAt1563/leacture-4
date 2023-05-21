@@ -7,21 +7,17 @@ In the realm of achieving our goals, it is imperative that we take the initiativ
 
 When undertaking a project for a client, it is crucial to recognize that they may not possess a comprehensive understanding of the programming world. As the developer, it becomes your responsibility to bridge this gap effectively. The client will convey their requirements and expectations, and it is up to you to translate and adapt them into the language of programming. This process necessitates clear communication, active listening, and a deep comprehension of both the client's needs and the technical aspects involved. By successfully transferring their demands into the programming realm, you can create a harmonious collaboration that ensures the final product aligns with their vision while leveraging your expertise to deliver a functional and user-friendly solution.
 
-- There is owners for the cars, each owner may have car or more
-- The owner has first and last name, phone, city, wallet with default zero money and slug which used for the owner profile
-- The car has these features: model should be unique, color, price, production date, image for the car and slug for the car which based on the car model for car details page
-- There is customers who can buy these cars from the owners, each customer has first and last name, phone, city, wallet with default 1000$ and number of cars that he bought at the beginning default is zero
-- You should show the number of cars that customer bought on the header line
-- When the customer buy the car from the owner you should delete the car from the owner and put the car price in owner wallet, and deduct the car price from the customer wallet and increase the number of cars that customer has by one, ensure the customer has enough money to buy the car
-- Each owner has profile page, which show on it his first and last name, phone, city, email and list of all cars on his page
-- For each listed car in owner page put button that delete that car, the owner of car only can delete the car
-- Make home page which all cars of all owners listed on it and you can search by cars production year, if the user put in the serach 2010 then he want all the cars the created from 2010 and after, each element of the car you should show the deatil of it and link to the owner page to let the customer go to his profile 
-- Make on the header link to add new car that just availabe for owners accounts not for customers
-- You should make page details for each car that you can show all it features, this page url based on the car slug that depend on car model
-- You should make registration page, same one for the customer and owner but you should ask him to choose what he want owner or customer user, and ask him how much money he has in his wallet
-- Make login page by username and password
-- Make edit profile page for customer or owner, that can edit his first and last name in it, just the same user can edit his information
-
-
-
-
+- Cars should have owners. An owner can own one or more cars.
+- An owner's profile includes their full name, contact number, city, a wallet starting with zero money, and a unique profile identifier (slug).
+- A car should have unique characteristics like model, color, price, production year, image, and a unique slug for the car details page.
+- Customers are users who can buy cars from owners. A customer profile includes their full name, contact number, city, a wallet starting with $1000, and a count of cars bought initially set to zero.
+- The header should display the number of cars a customer has bought.
+- When a car is bought, remove it from the owner's list, add its price to the owner's wallet, deduct its price from the customer's wallet, and increase the count of cars the customer owns by one. Ensure the customer can afford the car.
+- An owner's profile page should show their full name, contact number, city, email, and a list of their cars.
+- An owner should be able to delete their cars from their profile page. Only car owners can delete cars.
+- Create a homepage that lists all cars. Users should be able to search cars by production year. Each car listing should link to the owner's profile page.
+- Include a 'add new car' link in the header, accessible only to car owners.
+- Create a car details page for each car showing all its characteristics. The page's URL should use the car's unique slug.
+- Create a registration page for both customers and owners. During registration, users should select their role and specify their starting wallet amount.
+- Include a login page requiring a username and password.
+- Create a profile editing page for both customers and owners, allowing them to change their names. Only the profile owner can make changes.
